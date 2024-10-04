@@ -17,6 +17,7 @@
             padding-top: 2px;
             padding-bottom: 2px;
             margin-bottom: 10px;
+            text-shadow: 3px 2px gray;
             
             font-family: "Rubik Wet Paint", system-ui;
             font-weight: lighter;
@@ -54,6 +55,7 @@
             font-family: "Rubik Wet Paint", system-ui;
             font-weight: lighter;
             font-size: large;
+            text-shadow: 3px 2px gray;
         }
         img{
             border-radius: 15%;
@@ -75,6 +77,18 @@
             0% {transform: translate(0px);}
             50% {transform: translate(0px, -10px);}
             100% {transform: translate(0px);}
+        }
+        #boo{
+            height: 200px;
+            margin-top: 0;
+            object-fit: contain;
+            animation: glide 6s ease;
+        }
+        @keyframes glide {
+            0%   { transform: translate(-800px); } 
+            50%  { transform: translate(800px); }
+            75% {transform: translate(-90px);} 
+            100% { transform: translate(0px) }
         }
     </style>
 </head>
@@ -114,6 +128,7 @@
 
     <footer id="message">
         <h2>Happy Halloween!</h2>
+        <img id="boo" src="candy-photos/boo.jpg" alt="Boo!">
     </footer>
     
 </body>
